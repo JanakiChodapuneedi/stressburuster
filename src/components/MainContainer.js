@@ -1,7 +1,5 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom';
+import React from 'react';
 import Jokes from './Jokes';
-import SideBar from './SideBar';
 
 const MainContainer = () => {
   return (
