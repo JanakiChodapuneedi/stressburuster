@@ -1,7 +1,6 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import MainContainer from './MainContainer'
-import SideBar from './SideBar'
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import SideBar from './SideBar';
 
 const Body = () => {
   return (

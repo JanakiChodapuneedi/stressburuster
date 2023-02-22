@@ -1,10 +1,9 @@
 import './App.css';
-import SideBar from './components/SideBar';
 import MainContainer from './components/MainContainer';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Jokes from './components/Jokes';
 import Body from './components/Body';
 import MeditationVideos from './components/MeditationVideos';
+import Exercises from './components/Exercises';
 
 const browserRouter = createBrowserRouter ([
   {
@@ -14,10 +13,13 @@ const browserRouter = createBrowserRouter ([
       path : '/',
       element : <MainContainer/>
     },
-      {
+    {
         path:"meditationVideos",
         element:<MeditationVideos/>
-      }
+    },{
+      path:"exercises",
+        element:<Exercises/>
+    }
     ]
   }
 ])

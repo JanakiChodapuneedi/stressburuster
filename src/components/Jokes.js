@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import JokeCard from './JokeCard';
 const JOKES_LIST  = [
   {
