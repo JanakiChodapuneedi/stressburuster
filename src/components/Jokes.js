@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import JokeCard from './JokeCard';
 const JOKES_LIST  = [
   {
@@ -19,8 +19,22 @@ const JOKES_LIST  = [
     description: "Healthy...and green...",
   },
 ];
+
+
+
 const Jokes = () => {
-  
+  useEffect(()=>{
+    getJoke();
+  },[])
+  const getJoke= async( )=>{
+    const jokeData = await fetch ('https://icanhazdadjoke.com/',{
+      headers:{
+        'Accept':'application/json'
+      }
+    });
+    const jokeObj = await jokeData.json();
+  console.log(jokeObj)
+  };
   return (
     <div >
       <div className='font-bold text-lg '>Here Are some jokes for you!</div>
